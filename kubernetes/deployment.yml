@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apigate
+  labels:
+    app: apigate
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apigate
+  template:
+    metadata:
+      labels:
+        app: apigate
+    spec:
+      containers:
+        - name: apigate
+          image: username/apigate:latest
+          ports:
+            - containerPort: 8080
