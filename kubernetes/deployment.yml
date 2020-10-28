@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: apigate
-          image: takbaeyo/apigate:latest
+          image: deployment/apigate:latest
           ports:
             - containerPort: 8080
           readinessProbe:
