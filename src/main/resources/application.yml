@@ -27,11 +27,7 @@ spring:
         - id: point
           uri: http://localhost:8085
           predicates:
-            - Path=/points/**
-        - id: customer
-          uri: http://localhost:8086
-          predicates:
-            - Path=/customers/**
+            - Path=/points/** 
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -70,11 +66,7 @@ spring:
         - id: point
           uri: http://point:8080
           predicates:
-            - Path=/points/**
-        - id: customer
-          uri: http://customer:8080
-          predicates:
-            - Path=/customers/**
+            - Path=/points/** 
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -85,7 +77,6 @@ spring:
             allowedHeaders:
               - "*"
             allowCredentials: true
-
 
 server:
   port: 8080
