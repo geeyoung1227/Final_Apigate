@@ -67,6 +67,10 @@ spring:
           uri: http://point:8080
           predicates:
             - Path=/points/** 
+        - id: customer
+          uri: http://localhost:8086
+          predicates:
+            - Path=/customers/**
       globalcors:
         corsConfigurations:
           '[/**]':
