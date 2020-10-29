@@ -68,7 +68,7 @@ spring:
           predicates:
             - Path=/points/** 
         - id: customer
-          uri: http://customer:8086
+          uri: http://customer:8080
           predicates:
             - Path=/customers/**
       globalcors:
